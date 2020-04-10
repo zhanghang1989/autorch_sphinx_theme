@@ -9671,7 +9671,7 @@ pre {
 }
 
 .header-holder {
-  height: 68px;
+  height: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -9686,12 +9686,12 @@ pre {
   top: 0;
   width: 100%;
   z-index: 9999;
-  background-color: #ffffff;
+  background-color: #4080bf;
   border-bottom: 1px solid #e2e2e2;
 }
 @media screen and (min-width: 1100px) {
   .header-holder {
-    height: 90px;
+    height: 50px;
   }
 }
 
@@ -9721,22 +9721,23 @@ pre {
 }
 
 .header-logo {
-  height: 23px;
-  width: 93px;
-  background-image: url("../images/logo.svg");
+  height: 50px;
+  width: 50px;
+  background-image: url("https://hangzhang.org/files/favicon.png");
   background-repeat: no-repeat;
-  background-size: 93px 23px;
+  background-size: 50px 50px;
   display: block;
   float: left;
   z-index: 10;
 }
 @media screen and (min-width: 1100px) {
   .header-logo {
-    background-size: 108px 27px;
+    background-size: 50px 50px;
+    margin-top: -10px;
     position: absolute;
-    height: 27px;
-    width: 108px;
-    top: 4px;
+    height: 50px;
+    width: 50px;
+    top: 0px;
     float: none;
   }
 }
@@ -10021,7 +10022,7 @@ pre {
 }
 
 .footer-logo {
-  background-image: url("../images/logo-icon.svg");
+  background-image: url("https://hangzhang.org/files/favicon.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 20px 24px;
@@ -10090,6 +10091,7 @@ pre {
   border-radius: 50%;
   margin-right: 5px;
 }
+/*
 .footer-social-icons a.facebook {
   background-image: url("../images/logo-facebook-dark.svg");
   background-position: center center;
@@ -10107,6 +10109,7 @@ pre {
   background-position: center center;
   background-repeat: no-repeat;
 }
+*/
 
 .site-footer .mc-field-group {
   margin-top: -2px;
@@ -10310,9 +10313,11 @@ ul.pytorch-breadcrumbs a {
   top: 0;
 }
 
+/*
 .tutorials-header .header-logo {
   background-image: url("../images/logo-dark.svg");
 }
+*/
 .tutorials-header .main-menu ul li a {
   color: #262626;
 }

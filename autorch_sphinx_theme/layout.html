@@ -1,5 +1,6 @@
 {# TEMPLATE VAR SETTINGS #}
 {%- set url_root = pathto('', 1) %}
+{%- set baseurl = 'https://hangzhang.org/' %}
 {%- if url_root == '#' %}{% set url_root = '' %}{% endif %}
 {%- if not embedded and docstitle %}
   {%- set titlesuffix = " &mdash; "|safe + docstitle|e %}
@@ -22,7 +23,7 @@
 
   {# FAVICON #}
   {% if favicon %}
-    <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
+    <link rel="shortcut icon" href="{{ baseurl }}/files/favicon.png"/>
   {% endif %}
   {# CANONICAL URL #}
   {% if theme_canonical_url %}
@@ -81,6 +82,9 @@
 
   {% include "fonts.html" %}
 </head>
+
+
+{% include "nav.html" %}
 
 <!--div class="container-fluid header-holder tutorials-header" id="header-holder">
   <div class="container">
